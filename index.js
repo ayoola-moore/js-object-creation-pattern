@@ -16,6 +16,22 @@ const factoryFunction = (p1, p2, m1) => {
 
 // console.log(factoryFunction());
 
+// constructor creation pattern
+//s1
+const ConstructurePattern = function (p1, p2, m1) {
+    this.property1 = p1
+    this.property2 = p2
+    this.m1 = m1
+}
+
+// s2
+const construObj = new ConstructurePattern('property1', 'property2', function () {
+    console.log('method 1')
+})
+
+console.dir(construObj)
+
+
 // prototype creation pattern
 
 const ProtoFunction = function() {
@@ -28,4 +44,4 @@ ProtoFunction.prototype.method = function(){console.log('method 1')}
 
 protoObj1 = new ProtoFunction()
 
-console.dir(ProtoFunction)
+// console.dir(ProtoFunction)

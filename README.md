@@ -19,6 +19,12 @@ a. Initialize an EMPTY object (s2)
 b. assign properties and methods to the object within the function(s3)
 c. return the object (s4)
 
+2. The constructor pattern. you create object by initiating a constructor and invoking new object using the new keyword
+
+steps
+a. create a constructor(s1)
+b. Invoke a new object from the constructor(s2)
+
 3. Prototype pattern essentially creates an object by assigning prototype to an empty function
 
 It entails 2 basic steps
@@ -26,3 +32,4 @@ a. Create an empty function
 b. assign the properties and method via prototype
 
 The properties and method now created are passed from the parent to all newly created object via prototype
+
