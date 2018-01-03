@@ -18,3 +18,11 @@ It entails 3 basic steps
 a. Initialize an EMPTY object (s2)
 b. assign properties and methods to the object within the function(s3)
 c. return the object (s4)
+
+3. Prototype pattern essentially creates an object by assigning prototype to an empty function
+
+It entails 2 basic steps
+a. Create an empty function
+b. assign the properties and method via prototype
+
+The properties and method now created are passed from the parent to all newly created object via prototype

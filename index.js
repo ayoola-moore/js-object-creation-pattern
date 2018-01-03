@@ -1,6 +1,6 @@
 //****** Factory function pattern...
 
-// function creation (s1)
+// function creation pattern (s1)
 const factoryFunction = (p1, p2, m1) => {
     //(s2)
     const emptyObj= {}
@@ -14,4 +14,18 @@ const factoryFunction = (p1, p2, m1) => {
     return emptyObj;
 }
 
-console.log(factoryFunction());
+// console.log(factoryFunction());
+
+// prototype creation pattern
+
+const ProtoFunction = function() {
+
+}
+
+ProtoFunction.prototype.property1 = 'property1';
+ProtoFunction.prototype.property2 = 'property2';
+ProtoFunction.prototype.method = function(){console.log('method 1')}
+
+protoObj1 = new ProtoFunction()
+
+console.dir(ProtoFunction)
