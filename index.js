@@ -29,7 +29,7 @@ const construObj = new ConstructurePattern('property1', 'property2', function ()
     console.log('method 1')
 })
 
-console.dir(construObj)
+// console.dir(construObj)
 
 
 // prototype creation pattern
@@ -45,3 +45,23 @@ ProtoFunction.prototype.method = function(){console.log('method 1')}
 protoObj1 = new ProtoFunction()
 
 // console.dir(ProtoFunction)
+
+// Dynamic prototype pattern
+// (s1)
+const DynamicProto = function (p1, p2) {
+
+    // (s2)
+    this.p1= 'property1'
+    this.p2= 'property2'
+
+    // (s3)
+    if(typeof this.m1 !== 'function'){
+        DynamicProto.prototype.m1= function () {
+            console.log('method 1')
+        }
+    }
+}
+
+const dynaObj = new DynamicProto('property1', 'property2')
+
+console.dir(dynaObj.m1())

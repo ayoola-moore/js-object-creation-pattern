@@ -33,3 +33,10 @@ b. assign the properties and method via prototype
 
 The properties and method now created are passed from the parent to all newly created object via prototype
 
+4. The dynamic prototype pattern essentially aims to create light weight object by creating method within the prototype object dynamically. Its very similarly to the constructor pattern
+
+steps
+1. create your constructor (s1)
+2. instantiate your property (s2)
+3. Set a conditional that checks and create method within the prototype property (s3)
+
